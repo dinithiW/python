@@ -1,0 +1,19 @@
+Input: read lines of input from user
+
+loop:
+if first letter is a :
+	if carpark is not full:
+		add vehicle to car park
+		display message "car added to car park"
+	else:
+		add vehicle to waiting list
+		display message "car added to waiting list"
+
+if first letter is d:
+	search whether above vehicle is actually parked in the car park
+	if true:
+		increase move attribute of each car upto the departure car(including that)
+		by one
+		if waiting queue is not empty:
+			dequeue from waiting list and enqueue to car park
+
